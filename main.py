@@ -32,7 +32,6 @@ def game():
         print(vs)
         print(f"Against B:", end=" ")
         s_followers = participiant_info(s_index)
-        print(f"first followers {f_followers} second followers {s_followers}")
         answer = compare(f_followers, s_followers)
         your_option = input("Who has more followers? Type 'A' or 'B': ")
         if answer == your_option:
