@@ -17,13 +17,6 @@ def participiant_info(index1):
     return data[index1]["follower_count"]
 
 
-def is_correct_answer(answer, your_guess):
-    if answer == your_guess:
-        return True
-    else:
-        return False
-
-
 def game():
     should_continue = True
     score = 0
@@ -42,7 +35,7 @@ def game():
         print(f"first followers {f_followers} second followers {s_followers}")
         answer = compare(f_followers, s_followers)
         your_option = input("Who has more followers? Type 'A' or 'B': ")
-        if is_correct_answer(answer, your_option):
+        if answer == your_option:
             score += 1
             print(f"You're right. Current score: {score}")
         else:
